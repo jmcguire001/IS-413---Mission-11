@@ -2,6 +2,7 @@
 
 namespace Mission11_McGuire.Models
 {
+    // Create the EFBookstoreRepository class that implements the IBookstoreRepository interface
     public class EFBookstoreRepository : IBookstoreRepository
     {
         private BookstoreContext _context;

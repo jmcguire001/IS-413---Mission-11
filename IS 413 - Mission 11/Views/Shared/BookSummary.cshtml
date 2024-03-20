@@ -4,19 +4,25 @@
 @{
 }
 
+<!-- Make sure we have the Book model -->
 @model Book
 
-<div class="card m-1 p-1">
-    <h3>@Model.Title<span class="badge rounded-pill bg-primary text-white float-end"><small>@Model.BookID</small></span></h3>
+<!--  Add some styling to the card -->
+ <div style="margin: 15px;">
+    <div class="card m-1 p-1" style="border: 1px solid; border-radius: 5px; box-shadow: 0 2px 4px; background-color: lightgray;">
 
-    <ul>
-        <li>Title: @Model.Title</li>
-        <li>Author: @Model.Author</li>
-        <li>Publisher: @Model.Publisher</li>
-        <li>ISBN: @Model.ISBN</li>
-        <li>Classification: @Model.Classification</li>
-        <li>Category: @Model.Category</li>
-        <li>Page Count: @Model.PageCount</li>
-        <li>Price: @Model.Price.ToString("C")</li>
-    </ul>
+        <!--  Display the title and add some styling -->
+        <h3>@Model.Title<span class="badge rounded-pill bg-primary text-white float-end"><small>@Model.Price.ToString("C")</small></span></h3>
+
+        <ul>
+            <!--  Display the book details -->
+            <li>Title: @Model.Title</li>
+            <li>Author: @Model.Author</li>
+            <li>Publisher: @Model.Publisher</li>
+            <li>ISBN: @Model.ISBN</li>
+            <li>Page Count: @Model.PageCount</li>
+            <li>Classification: @Model.Classification</li>
+            <li>Category: @Model.Category</li>
+        </ul>
+    </div>
 </div>

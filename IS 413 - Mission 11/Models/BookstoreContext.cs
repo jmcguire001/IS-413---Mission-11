@@ -8,6 +8,7 @@ namespace Mission11_McGuire.Models
         {
         }
 
+        // Create a DbSet for the Book model
         public DbSet<Book> Books { get; set; }
     }
 }

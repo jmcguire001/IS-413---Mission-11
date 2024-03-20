@@ -1,5 +1,6 @@
 ﻿namespace Mission11_McGuire.Models.ViewModels
 {
+    // This class is used to store information about the pagination of the books
     public class PaginationInfo
     {
         public int TotalItems { get; set; }

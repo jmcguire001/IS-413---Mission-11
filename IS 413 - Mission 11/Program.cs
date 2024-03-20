@@ -13,7 +13,7 @@ builder.Services.AddDbContext<BookstoreContext>(options =>
 }
 );
 
-// When we refer to IWaterRepository, we actually want to use the EFWaterRepository
+// When we refer to IBookRepository, we actually want to use the EFBookRepository (but it uses IBookstoreRepository as the template)
 builder.Services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
 
 var app = builder.Build();
@@ -34,7 +34,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Pretty up the URL routing
 app.MapControllerRoute("pagination", "Books/{pageNum}", new { Controller = "Home", action = "Index" });
+
 app.MapDefaultControllerRoute();
 
 app.Run();
