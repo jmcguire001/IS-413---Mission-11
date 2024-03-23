@@ -1,3 +1,7 @@
+// IS 413 - Mission 11
+// by Jacob McGuire
+// Section 02, Group 03
+
 using Mission11_McGuire.Models;
 using Microsoft.EntityFrameworkCore;
 
