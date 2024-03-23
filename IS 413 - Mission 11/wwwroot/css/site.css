@@ -20,3 +20,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Make my footer look nice and stay on the bottom of the screen */
+.footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0px;
+}
+
+.container-flex {
+    flex: 1; /* This makes the content area flex-grow */
+    display: flex;
+    flex-direction: column;
+}
